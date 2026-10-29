@@ -22,7 +22,7 @@ Signs with your Apple Development identity if one exists, so the Accessibility g
 
 ## How it works
 
-macOS 27 draws all status items inside `MenuBarAgent`, which broke the old window-moving and spacer tricks (Ice, Bartender, Hidden Bar, and the previous Bartend). Bartend instead uses MenuBarAgent's private *visibility restriction* (the mechanism behind exam/assessment mode, via `MenuBarClientCore.framework`): while collapsed it holds an assertion that allowlists every running app except the hidden ones; expanding invalidates it.
+macOS 27 draws all status items inside `MenuBarAgent`, which broke the old window-moving and spacer tricks (Ice, Hidden Bar). Bartend instead uses MenuBarAgent's private *visibility restriction* (the mechanism behind exam/assessment mode, via `MenuBarClientCore.framework`): while collapsed it holds an assertion that allowlists every running app except the hidden ones; expanding invalidates it.
 
 ## Caveats
 
